@@ -4,10 +4,10 @@ class Ship
 
     @@all = []
 
-    def initialize(name, type, booty_attributes)
-        @name = name
-        @type = type
-        @booty_attributes = booty_attributes
+    def initialize(params)
+        params[:name]
+        params[:type]
+        params[:booty_attributes]
     end 
 
     def self.all 
@@ -15,7 +15,7 @@ class Ship
     end 
 
     def self.clear
-        Ship.clear
+        @@all = []
     end 
 
 
